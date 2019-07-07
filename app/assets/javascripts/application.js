@@ -14,3 +14,9 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+targetCard = document.querySelector(".card-big");
+
+targetCard.addEventListener("focus", (event) => {
+  
+});

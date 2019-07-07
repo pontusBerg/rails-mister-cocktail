@@ -11,8 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
+  <body>
+  <nav class="navbar-main">
+     <%= image_tag "logo.png", :width => 50, :height => 50 %>
+     <ul>
+      <li><%= link_to "New Cocktail", new_cocktail_path, :class => "text-navbar-style" %></li>
+      <li><%= link_to "All Cocktails", cocktails_path, :class => "text-navbar-style"%></li>
+    </ul>
+  </nav>
       <%= yield %>
-    </div>
   <%= javascript_include_tag "application" %>
   <%= javascript_pack_tag "application" %>
   </body>

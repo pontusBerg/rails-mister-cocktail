@@ -1,0 +1,10 @@
+<div class="container-form">
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+
+  <%= f.association :ingredient, as: :select  %>
+  <%= f.submit "Add More", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to "Create Cocktail", cocktails_path %>
+</div>

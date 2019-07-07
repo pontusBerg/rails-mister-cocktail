@@ -1,0 +1,32 @@
+.navbar-main {
+margin:0;
+display:flex;
+align-items: center;
+justify-content:space-between;
+height:100px;
+background-color:#94BFA7;
+
+}
+
+.navbar-main img {
+  margin: 0 15px;
+}
+
+.navbar-main ul {
+margin:0;
+}
+
+.navbar-main ul li{
+list-style:none;
+display:inline-block;
+
+}
+
+.navbar-main li a {
+  font-family: $headers-font;
+ color:white;
+ text-decoration:none;
+ margin:0 15px;
+ letter-spacing:2px;
+ font-weight:200;
+}

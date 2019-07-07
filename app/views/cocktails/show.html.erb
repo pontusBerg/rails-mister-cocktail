@@ -1,0 +1,14 @@
+<div class="container-main">
+  <div class="margin-big">
+    <div class="cocktail-card">
+      <%= cl_image_tag @cocktail.photo %>
+      <div class="group-ingredients">
+    <h2><%= @cocktail.name.capitalize %></h2>
+    <% @cocktail.doses.each  do |dose| %>
+      <h3><%= dose.ingredient.name.capitalize %> -
+      <%= dose.description.capitalize %></h3>
+    <% end %>
+    </div>
+    </div>
+  </div>
+</div>

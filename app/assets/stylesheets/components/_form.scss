@@ -1,0 +1,25 @@
+.form-control {
+  border-radius:4px;
+  border:0px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 12px rgba(26, 26, 29, 0.08);
+
+}
+
+.form-control-label {
+  color:white;
+}
+
+.form-control-file {
+font-weight:200;
+color:white;
+}
+
+.optional {
+  color:white !important;
+}
+
+.background-new {
+  background-size:100%;
+  background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 80%), url("https://images.unsplash.com/photo-1517159906085-dd4f2277d4d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-attachment: fixed;
+}
