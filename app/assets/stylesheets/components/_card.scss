@@ -4,9 +4,8 @@
  position:relative;
  background-position: center;
  box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 12px rgba(26, 26, 29, 0.08);
-
+perspective: 1000px;
 }
-
 
 .card-big a {
 color:white;
@@ -30,3 +29,9 @@ font-family: $headers-font;
   right: 10px;
   bottom:10px;
 }
+
+.background-card:hover {
+}
+
+
+/* Playground */

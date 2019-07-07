@@ -1,17 +1,14 @@
 <div class="container-main">
-  <div class="margin-big">
-
-
-  <div class="grid-main">
-    <% @cocktails.each do |cocktail| %>
-      <div class="card-big">
-        <div style="background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('<%= cocktail.photo %>'); background-size:cover; background-repeat:no-repeat; border-radius:4px;)">
-          <div class="flex-name">
-          <%= link_to "#{cocktail.name.capitalize}", cocktail_path(cocktail), :class => "text-bold" %>
-          <%= link_to "Delete", cocktail_path(cocktail), :class => "card-text-bottom-right", method: :delete, data: { confirm: "Are you sure?" } %>
+    <div class="grid-main margin-big">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-big">
+          <div class="card-big-child">
+              <div class="background-card" style="background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('<%= cocktail.photo %>'); background-size:cover; background-repeat:no-repeat; border-radius:4px;)">
+                <div class="flex-name">
+                  <%= link_to "#{cocktail.name.capitalize}", cocktail_path(cocktail), :class => "text-bold" %>
+                  <%= link_to "Delete", cocktail_path(cocktail), :class => "card-text-bottom-right", method: :delete, data: { confirm: "Are you sure?" } %>
+                    </div>
+                </div>
+              </div>
           </div>
-        </div>
-          </div>
-    <% end %>
-</div>
-  </div>
+      <% end %>
