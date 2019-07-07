@@ -1,10 +1,14 @@
-<div class="container-form">
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
+<div class="background-img">
+  <div class="container-form">
+    <div class="flexbox-center">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :description %>
 
-  <%= f.association :ingredient, as: :select  %>
-  <%= f.submit "Add More", class: "btn btn-primary" %>
-<% end %>
+    <%= f.association :ingredient, as: :select %>
+    <%= f.submit "Add More", class: "btn btn-primary button-small" %>
+      <%= link_to "Create Cocktail", cocktails_path, :class => "button-small-second" %>
+  <% end %>
 
-<%= link_to "Create Cocktail", cocktails_path %>
+  </div>
+</div>
 </div>

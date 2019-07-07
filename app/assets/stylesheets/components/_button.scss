@@ -1,17 +1,37 @@
 .button-small {
-color:white;
-border-radius:4px;
-background-color:#DC7F9B;
-border:0px;
-padding:15px 20px;
-
+  color:white;
+  border-radius:4px;
+  background-color:#DC7F9B;
+  border:0px;
+  padding:15px 20px;
 }
 
 .button-small {
   transition:0.3s;
 }
 .button-small:hover {
+  background-color:#C8748D;
+  transition:0.3s;
+}
+.button-small-second {
+  color:white;
+  border-radius:4px;
+  background-color:#95BFA7;
+  border:0px;
+  padding:16px 20px;
+}
 
-background-color:#C8748D;
-transition:0.3s;
+.button-small-second:hover {
+  color:white;
+  background-color:#88AE98;
+  transition:0.3s;
+  text-decoration:none;
+}
+
+.button-small {
+  transition:0.3s;
+}
+
+.button-small-second {
+  transition:0.3s;
 }
